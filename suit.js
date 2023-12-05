@@ -1,6 +1,6 @@
 let playerScore = 0
 let botScore = 0
-let roundLimit = 5
+let roundLimit = 3
 
 alert("Let's play SuitGame(●'◡'●)")
 
@@ -30,16 +30,4 @@ for(let round = 1 ; round <= roundLimit ; round++){
 
 }
 
-const score = (win, lose, tie) => {
-     if(playerScore > botScore){
-          alert(`FINAL SCORE:\nYou: ${playerScore} and Bot: ${botScore}\n\n ${win} \n\nThanks for play ╰(*°▽°*)╯`)
-     }else if(playerScore < botScore){
-          alert(`FINAL SCORE:\nYou: ${playerScore} and Bot: ${botScore}\n\n ${lose} \n\nThanks for play ╰(*°▽°*)╯`)
-     }else{
-          alert(`FINAL SCORE:\nYou: ${playerScore} and Bot: ${botScore}\n\n ${tie} \n\nThanks for play ╰(*°▽°*)╯`)
-     }
-}
-
-score('Congratulation😒', 'Better Luck Next Time😝', 'Well play🫠')
-
-// alert(`FINAL SCORE:\nYou: ${playerScore} and Bot: ${botScore} \n\nThanks for play ╰(*°▽°*)╯`)
+alert(`FINAL SCORE:\nYou: ${playerScore} and Bot: ${botScore} \n\nThanks for play ╰(*°▽°*)╯`)
